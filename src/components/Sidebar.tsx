@@ -7,7 +7,7 @@ const Sidebar = ({
   sidebarOpen,
   setSidebarOpen,
 }: {
-  sidebarOpen: Boolean;
+  sidebarOpen: boolean;
   setSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   const activeSection = useActiveSection(allSectionIds);
