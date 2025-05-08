@@ -1,0 +1,44 @@
+"use client"
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+
+const PropertyCard = ({
+  img,
+  description,
+  title
+}: {
+  img: string;
+  description: string;
+  title:string;
+}) => {
+  const router = useRouter();
+  return (
+    <div className="w-80 sm:w-96 rounded-2xl overflow-hidden shadow-md bg-white mb-8 ">
+      <div className="relative h-56">
+        <Image
+          src={img}
+          fill
+          alt="Private pool villa thumbnail"
+          className="object-cover object-center"
+          priority
+        />
+      </div>
+
+      <div className="p-4 ">
+        <p className="text-gray-700  text-xs font-brand-text tracking-wide text-brand-primary">
+          {description}
+        </p>
+        <div className="mt-1 text-end">
+          <button
+            onClick={() => router.push(`/${title}`)}
+            className="btn btn-sm text-xs  btn-success tracking-wide font-brand-subtitle uppercase"
+          >
+            More Info
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PropertyCard;

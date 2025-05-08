@@ -1,26 +1,105 @@
 @import "tailwindcss";
-
+@plugin "daisyui";
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-color: #0e3b33;
+  --secondary-color: #f4d0b0;
+}
+html {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  background-color: #f7fffe;
+  color: var(--primary-color);
+}
+.font-brand-title {
+  font-family: var(--font-brand-title);
+}
+.font-brand-subtitle {
+  font-family: var(--font-brand-subtitle);
+}
+.font-brand-text {
+  font-family: var(--font-brand-text);
+}
+.bg-brand-primary,
+.hover-bg-brand-primary:hover {
+  background-color: var(--primary-color);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.bg-brand-secondary,
+.hover-bg-brand-secondary:hover {
+  background-color: var(--secondary-color);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.text-brand-primary,
+.hover-text-brand-primary:hover {
+  color: var(--primary-color);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.text-brand-secondary,
+.hover-text-brand-secondary:hover {
+  color: var(--secondary-color);
+}
+
+.border-brand-primary,
+.hover-border-primary:hover {
+  border-color: var(--primary-color);
+}
+
+.border-brand-secondary,
+.hover-border-brand-secondary:hover {
+  border-color: var(--secondary-color);
+}
+
+.header {
+  @apply fixed top-0 z-20 justify-between items-center w-full bg-linear-to-b from-[#0e3b33];
+}
+.feature-section {
+  @apply flex flex-col justify-center items-center mb-10;
+}
+.feature-title {
+  @apply text-2xl sm:text-3xl border-b-2 px-10 sm:px-40 mb-6;
+  font-family: var(--font-brand-title);
+  color: var(--secondary-color);
+}
+.section-div{
+  @apply scroll-mt-16;
+}
+.section {
+  @apply min-h-screen p-8 flex flex-col;
+}
+.section-title {
+  @apply flex items-center justify-center gap-2 text-center text-4xl sm:text-5xl pb-10 pt-2;
+  color: var(--secondary-color);
+  font-family: var(--font-brand-title);
+}
+
+.img-slider-btn {
+  @apply p-1 rounded-full cursor-pointer opacity-70 hover:opacity-80 shadow-sm absolute z-10 top-1/2 transform -translate-y-1/2;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.img-slider-btn:active {
+  @apply scale-95;
+}
+
+.go-to-btn {
+  @apply w-14 h-14 active:scale-95 border transform transition-all duration-500 ease-out flex justify-center shadow-sm shadow-black items-center rounded-full;
+}
+.property-unit-btn {
+  @apply border text-sm rounded-sm p-1.5 cursor-pointer font-medium select-none capitalize;
+}
+.property-unit-btn-not-active {
+  @apply border-gray-400 text-gray-800 hover:bg-gray-50  bg-white;
+}
+.property-unit-btn-active {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.property-unit-card {
+  @apply bg-white rounded-lg shadow-sm p-4 min-h-screen;
+}
+.propery-unit-card-title {
+  @apply font-semibold text-lg capitalize;
+}
+.property-unit-section {
+  @apply p-5 scroll-mt-28;
 }
