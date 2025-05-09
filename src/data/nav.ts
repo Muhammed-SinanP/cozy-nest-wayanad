@@ -22,4 +22,5 @@ export const allPropertyUnitSections = [
   "hall-section",
   "washroom-section",
   "pool-section",
+  "exterior-section"
 ];

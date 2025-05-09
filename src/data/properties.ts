@@ -15,16 +15,8 @@ const threeBedroomVilla_Room2 =
 const threeBedroomVilla_Hall = "/images/properties/three-bedroom-villa/hall.jpg";
 const threeBedroomVilla_Washroom =
   "/images/properties/three-bedroom-villa/washroom.jpg";
-
-
-
 const twoBedroomVilla_Exterior = "/images/properties/two-bedroom-villa/exterior.jpg";
-  // const twoBedroomVilla_Room =
-  //   "/images/properties/two-bedroom-villa/room.jpg";
-  // const twoBedroomVilla_Hall =
-  //   "/images/properties/two-bedroom-villa/hall.jpg";
-  // const twoBedroomVilla_Washroom =
-  //   "/images/properties/two-bedroom-villa/washroom.jpg";
+
 
 
 const singleBedroomVilla_Exterior = "/images/properties/single-bedroom-villa/exterior.jpg";

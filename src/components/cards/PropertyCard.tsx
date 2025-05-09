@@ -1,19 +1,22 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 const PropertyCard = ({
   img,
   description,
-  title
+  title,
 }: {
   img: string;
   description: string;
-  title:string;
+  title: string;
 }) => {
   const router = useRouter();
   return (
-    <div className="w-80 sm:w-96 rounded-2xl overflow-hidden shadow-md bg-white mb-8 ">
+    <div
+      onClick={() => router.push(`/properties/${title}`)}
+      className="w-80 sm:w-96 rounded-2xl overflow-hidden shadow-md bg-white mb-8 "
+    >
       <div className="relative h-56">
         <Image
           src={img}
@@ -29,10 +32,7 @@ const PropertyCard = ({
           {description}
         </p>
         <div className="mt-1 text-end">
-          <button
-            onClick={() => router.push(`/${title}`)}
-            className="btn btn-sm text-xs  btn-success tracking-wide font-brand-subtitle uppercase"
-          >
+          <button className="btn btn-sm text-xs  btn-success tracking-wide font-brand-subtitle uppercase">
             More Info
           </button>
         </div>

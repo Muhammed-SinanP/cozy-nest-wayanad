@@ -38,15 +38,17 @@ const ImagePreview = async ({
     img = property.washroom[imgIndex];
   } else if (unit === "pool") {
     img = property.pool?.[imgIndex] || "";
+  } else if (unit === "exterior") {
+    img = property.exterior[imgIndex];
   }
 
   return (
-    <div>
+    <div className="relative min-h-screen">
       <Image
         src={img}
         alt={`Image ${imgIndex + 1} of ${unit} of ${propertyTitle}`}
         fill
-        className="object-contain"
+        className="object-contain "
       />
     </div>
   );

@@ -57,6 +57,11 @@ const PropertyDetailsClient = ({ title }: { title: string }) => {
               activeSection={activeSection ?? ""}
             />
           )}
+          <PropertyUnitBtn
+            title="exterior"
+            targetSection="exterior-section"
+            activeSection={activeSection ?? ""}
+          />
         </div>
       </div>
 
@@ -67,6 +72,7 @@ const PropertyDetailsClient = ({ title }: { title: string }) => {
         {property === privatePoolVila && (
           <PropertyUnitCard title="pool" images={property.pool ?? []} />
         )}
+        <PropertyUnitCard title="exterior" images={property.exterior} />
       </div>
     </div>
   );

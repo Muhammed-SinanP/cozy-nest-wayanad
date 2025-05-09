@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${brandTitleFont.variable} ${brandSubtitleFont.variable} ${brandTextFont.variable}`}
+        className={` ${brandTitleFont.variable} ${brandSubtitleFont.variable} ${brandTextFont.variable}`}
       >
         {children}
 
