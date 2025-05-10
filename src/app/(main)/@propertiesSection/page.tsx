@@ -1,7 +1,7 @@
 import PropertyCard from "@/components/cards/PropertyCard";
 import { allProperties } from "@/data/properties";
 import { GiHouse } from "react-icons/gi";
-
+import * as motion from "motion/react-client";
 const PropertiesSection = () => {
   return (
     <div className="section">
@@ -12,14 +12,25 @@ const PropertiesSection = () => {
       </h1>
 
       {allProperties.map((property) => (
-        <div key={property.index} className="feature-section">
+        <motion.div
+          initial={{ opacity: 0, y: 100, scale: 0.9 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            rotate: property.index % 2 ? 5 : -5,
+          }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          key={property.index}
+          className="feature-section"
+        >
           <h2 className="feature-title">{property.title}</h2>
           <PropertyCard
             img={property.thumbnail}
             description={property.description}
             title={property.title}
           />
-        </div>
+        </motion.div>
       ))}
     </div>
   );

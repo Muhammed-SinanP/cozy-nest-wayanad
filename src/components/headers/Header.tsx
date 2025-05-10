@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { allSectionIds, navLinks } from "@/data/nav";
 import Logo from "../Logo";
 import BookingBtn from "../buttons/BookingBtn";
@@ -10,9 +10,7 @@ const Header = ({
 }: {
   screenHeightScrolled: boolean;
 }) => {
-  const activeSection = useActiveSection(
-    allSectionIds
-  );
+  const activeSection = useActiveSection(allSectionIds);
 
   return (
     <header

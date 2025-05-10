@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
+
 const cover1Img = "/images/cover/1.jpg";
 const cover2Img = "/images/cover/2.jpg";
 const cover3Img = "/images/cover/3.jpg";
@@ -66,7 +67,7 @@ const HeroSection = () => {
       <button onClick={slideToRight} className="img-slider-btn right-4">
         <MdKeyboardArrowRight size={32} />
       </button>
-      <div className="w-56 h-36  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="w-56 h-36 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <Image
           src={titleImg}
           alt="Cozy Nest title image"

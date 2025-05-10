@@ -1,7 +1,8 @@
 import { amenities } from "@/data/amenities";
 import Image from "next/image";
 import { MdEventAvailable } from "react-icons/md";
-const campfire = "/images/cover/campfire.jpg"
+const campfire = "/images/cover/campfire.jpg";
+import * as motion from "motion/react-client";
 const AmenitiesSection = () => {
   return (
     <div className="section relative overflow-hidden">
@@ -22,7 +23,20 @@ const AmenitiesSection = () => {
 
         <div className="flex justify-center flex-wrap gap-6">
           {amenities.map((amenity) => (
-            <div
+            <motion.div
+              initial={{ x: amenity.index % 2 ? 100 : -100, opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              viewport={{ once: true }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 8,
+                delay: 0.4 * amenity.index,
+                duration:0.5
+              }}
               key={amenity.index}
               className="flex items-center bg-gray-100 shadow-md gap-2 p-2 mx-4 rounded-lg"
             >
@@ -30,7 +44,7 @@ const AmenitiesSection = () => {
               <p className=" tracking-wide font-brand-subtitle">
                 {amenity.title}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

@@ -4,6 +4,7 @@ import Logo from "../Logo";
 import { useEffect, useState } from "react";
 import BookingBtn from "../buttons/BookingBtn";
 import Sidebar from "../Sidebar";
+import { motion } from "motion/react";
 const MobileHeader = ({
   screenHeightScrolled,
 }: {
@@ -22,9 +23,12 @@ const MobileHeader = ({
     };
   }, [sidebarOpen]);
   return (
-    <div
+    <motion.header
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
       className={`lg:hidden flex uppercase p-2 header ${
-        screenHeightScrolled ? "to-[#0e3b33] shadow-md" : "to-transparent"
+        screenHeightScrolled ? "to-[#0e3b33] shadow-md " : "to-transparent"
       }`}
     >
       <RiMenu2Line
@@ -45,7 +49,7 @@ const MobileHeader = ({
       ></div>
 
       <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-    </div>
+    </motion.header>
   );
 };
 

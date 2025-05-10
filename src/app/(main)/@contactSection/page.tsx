@@ -44,7 +44,7 @@ const ContactSection = () => {
             <div className="flex gap-2 font-medium">
               <FaPhoneAlt size={14} className="mt-1" />
               <p className="text-sm border-b">
-                <a href="tel:+916282011125">6282011125</a>
+                <a className="hover:text-teal-800" href="tel:+916282011125">6282011125</a>
               </p>
             </div>
           </div>
@@ -53,7 +53,7 @@ const ContactSection = () => {
             <div className="flex gap-2 font-medium">
               <GrInstagram size={15} className="mt-1" />
               <p className="text-sm border-b">
-                <a
+                <a className="hover:text-teal-800"
                   href="https://www.instagram.com/cozy_nest.wayanad?igsh=MTVsM2pyaTFpd2xtZQ=="
                   target="_blank"
                   rel="noopener noreferrer"

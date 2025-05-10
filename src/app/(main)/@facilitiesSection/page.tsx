@@ -1,6 +1,7 @@
 import { facilities } from "@/data/facilities";
 import Image from "next/image";
 import { GiNorthStarShuriken } from "react-icons/gi";
+import * as motion from "motion/react-client";
 
 const FacilitiesSection = () => {
   return (
@@ -12,7 +13,20 @@ const FacilitiesSection = () => {
       </h1>
 
       {facilities.map((facility) => (
-        <div key={facility.index} className="feature-section">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+          }}
+          viewport={{ once: true }}
+          transition={{
+            duration: 2,
+            delay:0.5,
+            ease:"easeOut"
+          }}
+          key={facility.index}
+          className="feature-section"
+        >
           <h3 className="feature-title ">{facility.title}</h3>
           <div
             className={`flex flex-col ${
@@ -32,7 +46,7 @@ const FacilitiesSection = () => {
               {facility.desciption}
             </p>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
