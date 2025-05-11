@@ -20,6 +20,7 @@ const PropertiesSection = () => {
             scale: 1,
             rotate: property.index % 2 ? 5 : -5,
           }}
+          viewport={{ once: false, amount: 0.4 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           key={property.index}
           className="feature-section"

@@ -28,8 +28,8 @@ const GallerySection = () => {
   };
 
   return (
-    <div className="min-h-screen relative py-8 flex flex-col items-center">
-      <h1 className="section-title z-10 pb-10 pt-2">
+    <div className="min-h-screen relative pt-8 flex flex-col items-center">
+      <h1 className="section-title z-10 pb-10 pt-2 ">
         <IoMdImages size={35} />
         Our Gallery
         <IoMdImages size={35} />

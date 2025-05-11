@@ -5,49 +5,54 @@ import * as motion from "motion/react-client";
 
 const FacilitiesSection = () => {
   return (
-    <div className="section">
+    <div className="min-h-screen py-8 flex flex-col">
       <h1 className="section-title">
         <GiNorthStarShuriken size={35} />
         Our Facilities
         <GiNorthStarShuriken size={35} />
       </h1>
-
-      {facilities.map((facility) => (
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{
-            opacity: 1,
-          }}
-          viewport={{ once: true }}
-          transition={{
-            duration: 2,
-            delay:0.5,
-            ease:"easeOut"
-          }}
-          key={facility.index}
-          className="feature-section"
-        >
-          <h3 className="feature-title ">{facility.title}</h3>
-          <div
-            className={`flex flex-col ${
-              facility.index % 2 ? "sm:flex-row" : "sm:flex-row-reverse"
-            } justify-center items-center gap-4 max-w-3xl`}
+      <div className="flex flex-col gap-5 overflow-hidden">
+        {facilities.map((facility) => (
+          <motion.div
+            key={facility.index}
+            initial={{ x: facility.index % 2 === 0 ? 100 : -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ type: "tween", duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.3 }}
+            className={`flex ${
+              facility.index % 2 ? "justify-start" : "justify-end"
+            }`}
           >
-            <div className="w-80 shadow-sm h-56 relative rounded-2xl shrink-0 overflow-hidden">
-              <Image
-                src={facility.img}
-                alt={facility.title}
-                fill
-                className="object-cover object-center"
-                priority
-              />
+            <div
+              className={`flex flex-col justify-center items-center ${
+                facility.index % 2
+                  ? "md:items-end rounded-r-xl"
+                  : "md:items-start rounded-l-xl"
+              }  bg-brand-secondary min-w-2/3 p-5`}
+            >
+              <h3 className="facility-title">{facility.title}</h3>
+              <div
+                className={`flex flex-col  ${
+                  facility.index % 2 ? "md:flex-row " : "md:flex-row-reverse "
+                } justify-center items-center md:items-start gap-4 `}
+              >
+                <div className="w-80 shadow-sm h-56 relative rounded-xl shrink-0 overflow-hidden">
+                  <Image
+                    src={facility.img}
+                    alt={facility.title}
+                    fill
+                    className="object-cover object-center"
+                    priority
+                  />
+                </div>
+                <p className="max-w-80 sm:max-w-96 font-brand-title text-lg tracking-wide text-center md:text-start">
+                  {facility.desciption}
+                </p>
+              </div>
             </div>
-            <p className="font-brand-title text-lg tracking-wide text-center sm:text-start">
-              {facility.desciption}
-            </p>
-          </div>
-        </motion.div>
-      ))}
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 };

@@ -7,7 +7,7 @@
 html {
   box-sizing: border-box;
   scrollbar-width: thin;
-  background-color: #f7fffe;
+  background-color: #ffffff;
   color: var(--primary-color);
 }
 .font-brand-title {
@@ -56,9 +56,14 @@ html {
   @apply flex flex-col justify-center items-center mb-10;
 }
 .feature-title {
-  @apply text-2xl sm:text-3xl border-b-2 px-10 sm:px-40 mb-6;
+  @apply text-2xl sm:text-3xl border-b-2 px-10 sm:px-36 mb-6;
   font-family: var(--font-brand-title);
   color: var(--secondary-color);
+}
+.facility-title{
+  @apply text-2xl sm:text-3xl border-b-2 px-10 mb-6;
+  font-family: var(--font-brand-title);
+  color: var(--primary-color);
 }
 .section-div{
   @apply scroll-mt-16;
