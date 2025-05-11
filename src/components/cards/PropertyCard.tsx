@@ -27,13 +27,13 @@ const PropertyCard = ({
         />
       </div>
 
-      <div className="p-4 ">
-        <p className="text-gray-700  text-xs font-brand-text tracking-wide text-brand-primary">
+      <div className="p-4">
+        <p className="text-gray-700 text-xs font-brand-text tracking-wide text-brand-primary">
           {description}
         </p>
-        <div className="mt-1 text-end">
-          <button className="btn btn-sm text-xs  btn-success tracking-wide font-brand-subtitle uppercase">
-            More Info
+        <div className="mt-4 text-center">
+          <button className="btn  text-xs tracking-wide font-brand-subtitle uppercase bg-brand-primary text-brand-secondary">
+            Show property photos
           </button>
         </div>
       </div>
