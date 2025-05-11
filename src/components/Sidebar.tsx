@@ -14,7 +14,7 @@ const Sidebar = ({
   return (
     <div
       id="sidebar"
-      className={`h-screen shadow-md w-2/3 fixed top-0 z-30 bg-white transform -ml-2 transition-transform duration-500 ease-in-out ${
+      className={`h-screen shadow-md w-2/3 sm:w-1/2 md:w-1/3 fixed top-0 z-30 bg-white transform -ml-2 transition-transform duration-500 ease-in-out ${
         sidebarOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     >

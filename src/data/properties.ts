@@ -1,31 +1,36 @@
 const privatePoolVilla_Exterior =
   "/images/properties/private-pool-villa/exterior.jpg";
+const privatePoolVilla_Exterior_2 =
+  "/images/properties/private-pool-villa/exterior2.jpg";
 const privatePoolVilla_Room = "/images/properties/private-pool-villa/room.jpg";
 const privatePoolVilla_Hall = "/images/properties/private-pool-villa/hall.jpg";
 const privatePoolVilla_Pool = "/images/properties/private-pool-villa/pool.jpg";
 const privatePoolVilla_Washroom =
   "/images/properties/private-pool-villa/washroom.jpg";
 
-const threeBedroomVilla_Exterior = "/images/properties/three-bedroom-villa/exterior.jpg";
-const threeBedroomVilla_Room1 = "/images/properties/three-bedroom-villa/room1.jpg";
+const threeBedroomVilla_Exterior =
+  "/images/properties/three-bedroom-villa/exterior.jpg";
+const threeBedroomVilla_Room1 =
+  "/images/properties/three-bedroom-villa/room1.jpg";
 const threeBedroomVilla_Room2 =
   "/images/properties/three-bedroom-villa/room2.jpg";
-  const threeBedroomVilla_Room3 =
-    "/images/properties/three-bedroom-villa/room3.jpg";
-const threeBedroomVilla_Hall = "/images/properties/three-bedroom-villa/hall.jpg";
+const threeBedroomVilla_Room3 =
+  "/images/properties/three-bedroom-villa/room3.jpg";
+const threeBedroomVilla_Hall =
+  "/images/properties/three-bedroom-villa/hall.jpg";
 const threeBedroomVilla_Washroom =
   "/images/properties/three-bedroom-villa/washroom.jpg";
-const twoBedroomVilla_Exterior = "/images/properties/two-bedroom-villa/exterior.jpg";
+const twoBedroomVilla_Exterior =
+  "/images/properties/two-bedroom-villa/exterior.jpg";
 
-
-
-const singleBedroomVilla_Exterior = "/images/properties/single-bedroom-villa/exterior.jpg";
- const singleBedroomVilla_Room =
-    "/images/properties/single-bedroom-villa/room.jpg";
-  const singleBedroomVilla_Hall =
-    "/images/properties/single-bedroom-villa/hall.jpg";
-  const singleBedroomVilla_Washroom =
-    "/images/properties/single-bedroom-villa/washroom.jpg";
+const singleBedroomVilla_Exterior =
+  "/images/properties/single-bedroom-villa/exterior.jpg";
+const singleBedroomVilla_Room =
+  "/images/properties/single-bedroom-villa/room.jpg";
+const singleBedroomVilla_Hall =
+  "/images/properties/single-bedroom-villa/hall.jpg";
+const singleBedroomVilla_Washroom =
+  "/images/properties/single-bedroom-villa/washroom.jpg";
 
 export const allProperties = [
   {
@@ -61,13 +66,17 @@ export const allProperties = [
 export const privatePoolVila = {
   room: [privatePoolVilla_Room],
   hall: [privatePoolVilla_Hall],
-  exterior: [privatePoolVilla_Exterior],
+  exterior: [privatePoolVilla_Exterior, privatePoolVilla_Exterior_2],
   washroom: [privatePoolVilla_Washroom],
   pool: [privatePoolVilla_Pool],
 };
 
 export const threeBedroomVilla = {
-  room: [threeBedroomVilla_Room1,threeBedroomVilla_Room2,threeBedroomVilla_Room3],
+  room: [
+    threeBedroomVilla_Room1,
+    threeBedroomVilla_Room2,
+    threeBedroomVilla_Room3,
+  ],
   hall: [threeBedroomVilla_Hall],
   exterior: [threeBedroomVilla_Exterior],
   washroom: [threeBedroomVilla_Washroom],
