@@ -1,3 +1,4 @@
+const img0 = "/images/gallery/0.png";
 const img1 = "/images/gallery/1.jpg";
 const img2 = "/images/gallery/2.jpg";
 const img3 = "/images/gallery/3.jpg";
@@ -12,7 +13,9 @@ const img11 = "/images/gallery/11.jpg";
 const img12 = "/images/gallery/12.jpg";
 const img13 = "/images/gallery/13.jpg";
 const img14 = "/images/gallery/14.jpg";
+const img15 = "/images/gallery/15.jpg";
 export const gallery = [
+  { index: 0, src: img0 },
   { index: 1, src: img1 },
   { index: 2, src: img2 },
   { index: 3, src: img3 },
@@ -27,4 +30,5 @@ export const gallery = [
   { index: 12, src: img12 },
   { index: 13, src: img13 },
   { index: 14, src: img14 },
+  { index: 15, src: img15 },
 ];

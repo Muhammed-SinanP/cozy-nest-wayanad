@@ -7,7 +7,7 @@
 html {
   box-sizing: border-box;
   scrollbar-width: thin;
-  background-color: #ffffff;
+  background-color: #f6fdfc;
   color: var(--primary-color);
 }
 .font-brand-title {
@@ -50,7 +50,7 @@ html {
 }
 
 .header {
-  @apply fixed top-0 z-20 justify-between items-center w-full bg-linear-to-b from-[#0e3b33];
+  @apply fixed top-0 z-20 justify-between items-center shadow-black w-full bg-linear-to-b from-[#0e3b33];
 }
 .feature-section {
   @apply flex flex-col justify-center items-center mb-10;
