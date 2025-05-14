@@ -5,13 +5,13 @@ import { FaAddressCard } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 
-const contactCoverImg = "/images/cover/contact-cover.webp";
+const bgImg = "/images/cover/contact.webp";
 
 const ContactSection = () => {
   return (
     <div className="section relative ">
       <Image
-        src={contactCoverImg}
+        src={bgImg}
         fill
         alt="Cover image of contact section"
         className="object-cover z-0 brightness-90"

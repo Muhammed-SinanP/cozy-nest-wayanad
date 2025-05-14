@@ -140,6 +140,7 @@ export const singleBedroomVilla = {
   exterior: [
     `${singleBedroomVillaFolder}/exterior/1.webp`,
     `${singleBedroomVillaFolder}/exterior/2.webp`,
+    `${singleBedroomVillaFolder}/exterior/3.webp`,
   ],
   washroom: [
     `${singleBedroomVillaFolder}/washroom/1.webp`,

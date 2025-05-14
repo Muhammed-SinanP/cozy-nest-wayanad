@@ -28,7 +28,7 @@ const GallerySection = () => {
   };
 
   return (
-    <div className="min-h-screen relative flex flex-col items-center">
+    <div className="min-h-screen relative flex flex-col items-center mt-8">
       <h1 className="section-title z-10 absolute top-10">
         <IoMdImages size={35} className="drop-shadow" />
         Our Gallery

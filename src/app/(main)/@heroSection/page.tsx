@@ -41,6 +41,7 @@ const HeroSection = () => {
       if (sliderIntervalRef.current) clearInterval(sliderIntervalRef.current);
     };
   }, [imgIndex]);
+   
 
   return (
     <div className="relative min-h-screen overflow-hidden">

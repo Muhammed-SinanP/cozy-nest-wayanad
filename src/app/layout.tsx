@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import MapCTABtn from "@/components/buttons/MapCTABtn";
 import CallCTABtn from "@/components/buttons/CallCTABtn";
 
+
 export const metadata: Metadata = {
   title: "Cozy Nest Wayanad | Breathe in peace, live in comfort",
   description:
@@ -19,6 +20,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+ 
   return (
     <html lang="en">
       <body

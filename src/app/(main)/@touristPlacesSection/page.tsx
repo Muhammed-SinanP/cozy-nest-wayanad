@@ -2,7 +2,7 @@ import { touristPlaces } from "@/data/touristPlaces";
 import Image from "next/image";
 import { GiEarthAmerica } from "react-icons/gi";
 import { GiEarthAfricaEurope } from "react-icons/gi";
-const bgImg = "/images/wayand/5.webp";
+const bgImg = "/images/cover/wayanad.webp";
 const TouristPlacesSection = () => {
   return (
     <div className="section relative">
@@ -10,7 +10,7 @@ const TouristPlacesSection = () => {
         src={bgImg}
         alt="Background image"
         fill
-        className="brightness-95"
+        className="brightness-75 object-cover"
         priority
       />
       <h1 className="section-title z-10">
@@ -31,14 +31,13 @@ const TouristPlacesSection = () => {
           drive from our property.
         </p>
       </div>
-      <ul className="mx-auto z-10">
+      <ul className="mx-auto z-10 flex flex-col gap-2">
         {touristPlaces.map((place) => (
           <li
             key={place.id}
-            className="font-brand-subtitle flex justify-between items-center gap-4 text-lg text-brand-secondary tracking-wide text-shadow-sm"
+            className="font-brand-subtitle flex justify-between items-center gap-4 text-sm md:text-base lg:text-lg text-brand-secondary tracking-wide text-shadow-sm"
           >
             {place.place}
-            {/* <span>---</span> */}
             <span className="flex-1 border-b-2 min-w-4"></span>
             <span className="tracking-wider">{place.distance}</span>
           </li>

@@ -15,7 +15,7 @@ const PropertyCard = ({
   return (
     <div
       onClick={() => router.push(`/properties/${title}`)}
-      className="w-80 sm:w-80 rounded-2xl overflow-hidden shadow-md bg-white mb-8 "
+      className="w-80 sm:w-80 rounded-2xl overflow-hidden shadow-md bg-white mb-8 cursor-pointer active:scale-95"
     >
       <div className="relative h-56 md:h-48">
         <Image
