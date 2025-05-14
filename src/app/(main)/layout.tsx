@@ -7,6 +7,8 @@ const HomeLayout = ({
   gallerySection,
   locationSection,
   contactSection,
+  testimonialsSection,
+  touristPlacesSection,
 }: {
   children: React.ReactNode;
   heroSection: React.ReactNode;
@@ -16,6 +18,8 @@ const HomeLayout = ({
   gallerySection: React.ReactNode;
   locationSection: React.ReactNode;
   contactSection: React.ReactNode;
+  testimonialsSection: React.ReactNode;
+  touristPlacesSection: React.ReactNode;
 }) => {
   return (
     <div>
@@ -35,8 +39,14 @@ const HomeLayout = ({
       <section id="location-section" className="section-div">
         {locationSection}
       </section>
+      <section id="testimonials-section" className="section-div">
+        {testimonialsSection}
+      </section>
       <section id="gallery-section" className="section-div">
         {gallerySection}
+      </section>
+      <section id="tourist-places-section" className="section-div">
+        {touristPlacesSection}
       </section>
       <section id="contact-section" className="section-div">
         {contactSection}

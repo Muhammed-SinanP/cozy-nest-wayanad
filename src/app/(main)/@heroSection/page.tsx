@@ -4,10 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 
-const cover1Img = "/images/cover/1.jpg";
-const cover2Img = "/images/cover/2.jpg";
-const cover3Img = "/images/cover/3.jpg";
-const titleImg = "/images/logo/logo-with-subtitle.png";
+const cover1Img = "/images/cover/1.webp";
+const cover2Img = "/images/cover/2.webp";
+const cover3Img = "/images/cover/3.webp";
+const titleImg = "/images/logo/logo-with-subtitle.webp";
 
 const HeroSection = () => {
   const coverImgs = [cover1Img, cover2Img, cover3Img];

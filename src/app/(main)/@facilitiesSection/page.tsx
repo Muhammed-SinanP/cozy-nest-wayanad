@@ -7,9 +7,9 @@ const FacilitiesSection = () => {
   return (
     <div className="min-h-screen py-8 flex flex-col">
       <h1 className="section-title">
-        <GiNorthStarShuriken size={35} />
+        <GiNorthStarShuriken size={35} className="drop-shadow" />
         Our Facilities
-        <GiNorthStarShuriken size={35} />
+        <GiNorthStarShuriken size={35} className="drop-shadow" />
       </h1>
       <div className="flex flex-col gap-5 overflow-hidden">
         {facilities.map((facility) => (
@@ -46,7 +46,7 @@ const FacilitiesSection = () => {
                   />
                 </div>
                 <p className="max-w-80 sm:max-w-96 font-brand-title text-lg tracking-wide text-center md:text-start">
-                  {facility.desciption}
+                  {facility.description}
                 </p>
               </div>
             </div>

@@ -13,7 +13,7 @@ const Main = () => {
     }
   }, []);
   const screenHeightScrolled = useScrollPosition(screenHeight);
-console.log(screenHeightScrolled);
+
 
   return (
     <div>

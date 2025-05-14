@@ -52,16 +52,16 @@ html {
 .header {
   @apply fixed top-0 z-20 justify-between items-center shadow-black w-full bg-linear-to-b from-[#0e3b33];
 }
-.feature-section {
-  @apply flex flex-col justify-center items-center mb-10;
+.property-section {
+  @apply flex flex-col gap-2 justify-center items-center  col-span-12 md:col-span-6;
 }
-.feature-title {
-  @apply text-2xl sm:text-3xl border-b-2 px-10 sm:px-36 mb-6;
+.property-title {
+  @apply text-2xl sm:text-3xl border-b-2 px-4 text-shadow-sm;
   font-family: var(--font-brand-title);
   color: var(--secondary-color);
 }
 .facility-title{
-  @apply text-2xl sm:text-3xl border-b-2 px-10 mb-6;
+  @apply text-2xl sm:text-3xl border-b-2 px-4 mb-6;
   font-family: var(--font-brand-title);
   color: var(--primary-color);
 }
@@ -69,10 +69,10 @@ html {
   @apply scroll-mt-16;
 }
 .section {
-  @apply min-h-screen p-8 flex flex-col;
+  @apply min-h-screen p-4 sm:p-8 flex flex-col;
 }
 .section-title {
-  @apply flex items-center justify-center gap-2 text-center text-4xl sm:text-5xl pb-10 pt-2;
+  @apply capitalize text-shadow-sm flex items-center justify-center gap-2 text-center text-4xl sm:text-5xl pb-10 pt-2;
   color: var(--secondary-color);
   font-family: var(--font-brand-title);
 }
@@ -107,4 +107,9 @@ html {
 }
 .property-unit-section {
   @apply p-5 scroll-mt-28;
+}
+.testimonial-content{
+  @apply  text-center text-shadow-sm text-xl px-4 tracking-wider;
+  color: var(--secondary-color);
+  font-family: var(--font-brand-title);
 }

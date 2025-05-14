@@ -28,11 +28,11 @@ const GallerySection = () => {
   };
 
   return (
-    <div className="min-h-screen relative pt-8 flex flex-col items-center">
-      <h1 className="section-title z-10 pb-10 pt-2 ">
-        <IoMdImages size={35} />
+    <div className="min-h-screen relative flex flex-col items-center">
+      <h1 className="section-title z-10 absolute top-10">
+        <IoMdImages size={35} className="drop-shadow" />
         Our Gallery
-        <IoMdImages size={35} />
+        <IoMdImages size={35} className="drop-shadow" />
       </h1>
 
       <motion.div
@@ -40,7 +40,7 @@ const GallerySection = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="w-full grid grid-cols-12"
+        className="w-full grid grid-cols-12 "
       >
         {gallery.map((img) => (
           <motion.div

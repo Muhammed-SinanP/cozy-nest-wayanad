@@ -15,7 +15,7 @@ export const brandSubtitleFont = Orbitron({
 
 export const brandTextFont = Playfair_Display({
   subsets: ["latin"],
-  weight: ["600"],
+  weight: ["400"],
   variable: "--font-brand-text",
 });
 

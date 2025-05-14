@@ -20,7 +20,7 @@ const PropertyUnitCard = ({
             <Link
               href={`${pathname}/${title}-${i}`}
               key={i}
-              className="relative col-span-6 h-40 sm:h-56 md:col-span-4 md:h-60 2xl:col-span-3 rounded-md overflow-hidden"
+              className="relative col-span-6 h-40 sm:h-56 md:col-span-4 md:h-64 2xl:col-span-3 rounded-md overflow-hidden"
             >
               <Image
                 src={img}

@@ -1,0 +1,18 @@
+export const touristPlaces = [
+  { id: 1, place: "Karlad Lake", distance: "6.6 km" },
+  { id: 2, place: "Banasura Sagar Dam", distance: "9.7 km" },
+  { id: 3, place: "Kurumbalakotta View Point", distance: "9.8 km" },
+  { id: 4, place: "Meenmutti Waterfalls", distance: "10.9 km" },
+  { id: 5, place: "Pazhassi Raja Tomb", distance: "21.3 km" },
+  { id: 6, place: "Pookode Lake", distance: "21.9 km" },
+  { id: 7, place: "Karapuzha Dam", distance: "25.7 km" },
+  { id: 8, place: "Churam View Point", distance: "27.6 km" },
+  { id: 9, place: "Kuruva Island", distance: "28.7 km" },
+  { id: 10, place: "Phantom Rock", distance: "28.8 km" },
+  { id: 11, place: "Chembra Peak", distance: "32.2 km" },
+  { id: 12, place: "Rippon Tea Factory", distance: "32.8 km" },
+  { id: 13, place: "Edakkal Caves", distance: "34.4 km" },
+  { id: 14, place: "Soochipara Waterfalls", distance: "38.2 km" },
+  { id: 15, place: "Tholpetty Wildlife Sanctuary", distance: "44.8 km" },
+  { id: 16, place: "Muthanga Wildlife Sanctuary", distance: "48.1 km" },
+];

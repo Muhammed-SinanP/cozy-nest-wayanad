@@ -5,7 +5,7 @@ import { FaAddressCard } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 
-const contactCoverImg = "/images/cover/contact-cover.jpg";
+const contactCoverImg = "/images/cover/contact-cover.webp";
 
 const ContactSection = () => {
   return (
@@ -20,9 +20,9 @@ const ContactSection = () => {
 
       <div className="relative z-10 ">
         <h1 className="section-title">
-          <FaPhoneFlip size={35} />
+          <FaPhoneFlip size={35} className="drop-shadow" />
           Contact Us
-          <FaPhone size={35} />
+          <FaPhone size={35} className="drop-shadow" />
         </h1>
         <div className="tracking-wider flex flex-col gap-6 items-start text-white">
           <div className="flex flex-col gap-1">
@@ -44,7 +44,9 @@ const ContactSection = () => {
             <div className="flex gap-2 font-medium">
               <FaPhoneAlt size={14} className="mt-1" />
               <p className="text-sm border-b">
-                <a className="hover:text-teal-800" href="tel:+916282011125">6282011125</a>
+                <a className="hover:text-teal-800" href="tel:+916282011125">
+                  6282011125
+                </a>
               </p>
             </div>
           </div>
@@ -53,7 +55,8 @@ const ContactSection = () => {
             <div className="flex gap-2 font-medium">
               <GrInstagram size={15} className="mt-1" />
               <p className="text-sm border-b">
-                <a className="hover:text-teal-800"
+                <a
+                  className="hover:text-teal-800"
                   href="https://www.instagram.com/cozy_nest.wayanad?igsh=MTVsM2pyaTFpd2xtZQ=="
                   target="_blank"
                   rel="noopener noreferrer"

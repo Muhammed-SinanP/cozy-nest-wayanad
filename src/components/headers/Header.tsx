@@ -19,7 +19,7 @@ const Header = ({
       } `}
     >
       <Logo />
-      <ul className="flex gap-4 justify-center items-center text-brand-secondary">
+      <ul className="flex gap-3 justify-center items-center text-brand-secondary">
         {navLinks.map((navLink) => (
           <li
             onClick={() => scrollToSection(navLink.sectionId)}

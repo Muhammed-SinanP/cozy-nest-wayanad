@@ -1,7 +1,7 @@
 import { amenities } from "@/data/amenities";
 import Image from "next/image";
 import { MdEventAvailable } from "react-icons/md";
-const campfire = "/images/cover/campfire.jpg";
+const campfire = "/images/cover/campfire.webp";
 import * as motion from "motion/react-client";
 const AmenitiesSection = () => {
   return (
@@ -16,9 +16,9 @@ const AmenitiesSection = () => {
 
       <div className="z-10 relative ">
         <h1 className="section-title">
-          <MdEventAvailable size={35} />
+          <MdEventAvailable size={35} className="drop-shadow" />
           Amenities
-          <MdEventAvailable size={35} />
+          <MdEventAvailable size={35} className="drop-shadow" />
         </h1>
 
         <div className="flex justify-center flex-wrap gap-6">
@@ -35,7 +35,7 @@ const AmenitiesSection = () => {
                 stiffness: 100,
                 damping: 8,
                 delay: 0.4 * amenity.index,
-                duration:0.5
+                duration: 0.5,
               }}
               key={amenity.index}
               className="flex items-center bg-gray-100 shadow-md gap-2 p-2 mx-4 rounded-lg"

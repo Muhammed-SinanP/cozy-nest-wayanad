@@ -13,7 +13,7 @@ const MapCTABtn = () => {
         damping: 8,
         delay: 0.1,
       }}
-      href="https://www.google.com/maps/dir/?api=1&destination=11.660690,76.013237"
+      href="https://www.google.com/maps/dir/?api=1&destination=11.660656909458796,76.01310845462339&waypoints=11.657992167268295,76.01884006487015|11.658775355824202,76.0148629393161"
       target="_blank"
       rel="noopener noreferrer"
       className="go-to-btn text-red-600 bg-white"
