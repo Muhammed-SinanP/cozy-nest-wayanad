@@ -15,10 +15,10 @@ const TestimonialsSection = () => {
       </p>
       <TestimonialCarousel />
       <p className="testimonial-content">
-        At Cozy Nest Wayanad, our guests aren’t just visitors — they’re family.
-        Each experience shared is a story of peace, comfort, and connection with
-        nature. We're grateful for every kind word and happy moment spent with
-        us.
+        At Cozy Nest Wayanad, our guests aren&apos;t just visitors —
+        they&apos;re family. Each experience shared is a story of peace,
+        comfort, and connection with nature. We're grateful for every kind word
+        and happy moment spent with us.
       </p>
       <p className="testimonial-content pt-4">
         Whether you're planning a weekend escape or a long vacation, we look
