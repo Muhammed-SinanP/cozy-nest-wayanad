@@ -27,7 +27,7 @@ const TouristPlacesSection = () => {
           unique experience.
         </p>
         <p className="mt-6">
-          Here's a curated list of must-visit places located within an hour
+          Here&apos;s a curated list of must-visit places located within an hour
           drive from our property.
         </p>
       </div>
