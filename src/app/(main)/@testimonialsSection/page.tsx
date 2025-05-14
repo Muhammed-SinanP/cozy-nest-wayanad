@@ -9,20 +9,20 @@ const TestimonialsSection = () => {
         <IoIosHeart size={35} className="drop-shadow" />
       </h1>
       <p className="testimonial-content">
-        Hear directly from our happy guests! Whether it's a peaceful retreat or
-        a family getaway, Cozy Nest Wayanad has left lasting impressions. Watch
-        their experiences in their own words.
+        Hear directly from our happy guests! Whether it&apos;s a peaceful
+        retreat or a family getaway, Cozy Nest Wayanad has left lasting
+        impressions. Watch their experiences in their own words.
       </p>
       <TestimonialCarousel />
       <p className="testimonial-content">
         At Cozy Nest Wayanad, our guests aren&apos;t just visitors —
         they&apos;re family. Each experience shared is a story of peace,
-        comfort, and connection with nature. We're grateful for every kind word
-        and happy moment spent with us.
+        comfort, and connection with nature. We&apos;re grateful for every kind
+        word and happy moment spent with us.
       </p>
       <p className="testimonial-content pt-4">
-        Whether you're planning a weekend escape or a long vacation, we look
-        forward to creating your perfect stay.
+        Whether you&apos;re planning a weekend escape or a long vacation, we
+        look forward to creating your perfect stay.
       </p>
     </div>
   );
