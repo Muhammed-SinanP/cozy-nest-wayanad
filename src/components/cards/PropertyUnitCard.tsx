@@ -27,6 +27,7 @@ const PropertyUnitCard = ({
                 alt={`Image ${i + 1} of ${title}`}
                 fill
                 className="object-cover"
+                priority
               />
             </Link>
           ))}

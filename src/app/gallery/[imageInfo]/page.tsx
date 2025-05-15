@@ -25,6 +25,7 @@ const ImagePreview = async ({
         alt={`Image ${imageInfo} in gallery`}
         fill
         className="object-contain"
+        priority
       />
     </div>
   );

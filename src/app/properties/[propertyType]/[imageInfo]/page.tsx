@@ -13,11 +13,10 @@ const ImagePreview = async ({
   params: Promise<{ propertyType: string; imageInfo: string }>;
 }) => {
   const { propertyType, imageInfo } = await params;
-  const propertyTitle = propertyType.replaceAll("-"," ");
+  const propertyTitle = propertyType.replaceAll("-", " ");
   const [unit, index] = imageInfo.split("-");
   const imgIndex = parseInt(index);
 
-   
   let property: PropertyType = threeBedroomVilla;
 
   if (propertyTitle === "private pool villa") {
@@ -49,7 +48,8 @@ const ImagePreview = async ({
         src={img}
         alt={`Image ${imgIndex + 1} of ${unit} of ${propertyTitle}`}
         fill
-        className="object-contain "
+        className="object-contain"
+        priority
       />
     </div>
   );
