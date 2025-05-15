@@ -35,15 +35,42 @@ export const allProperties = [
 ];
 
 export const privatePoolVila = {
-  room: [`${privatePoolVilaFolder}/room/1.webp`],
-  hall: [`${privatePoolVilaFolder}/hall/1.webp`],
+  room: [
+    `${privatePoolVilaFolder}/room/1.webp`,
+    `${privatePoolVilaFolder}/room/2.webp`,
+    `${privatePoolVilaFolder}/room/3.webp`,
+    `${privatePoolVilaFolder}/room/4.webp`,
+  ],
+  hall: [
+    `${privatePoolVilaFolder}/hall/1.webp`,
+    `${privatePoolVilaFolder}/hall/2.webp`,
+    `${privatePoolVilaFolder}/hall/3.webp`,
+    `${privatePoolVilaFolder}/hall/4.webp`,
+    `${privatePoolVilaFolder}/hall/5.webp`,
+    `${privatePoolVilaFolder}/hall/6.webp`,
+    `${privatePoolVilaFolder}/hall/7.webp`,
+  ],
   exterior: [
     `${privatePoolVilaFolder}/exterior/1.webp`,
     `${privatePoolVilaFolder}/exterior/2.webp`,
     `${privatePoolVilaFolder}/exterior/3.webp`,
+    `${privatePoolVilaFolder}/exterior/4.webp`,
+    `${privatePoolVilaFolder}/exterior/5.webp`,
+    `${privatePoolVilaFolder}/exterior/6.webp`,
   ],
-  washroom: [`${privatePoolVilaFolder}/washroom/1.webp`],
-  pool: [`${privatePoolVilaFolder}/private-pool/1.webp`],
+  washroom: [
+    `${privatePoolVilaFolder}/washroom/1.webp`,
+    `${privatePoolVilaFolder}/washroom/2.webp`,
+    `${privatePoolVilaFolder}/washroom/3.webp`,
+    `${privatePoolVilaFolder}/washroom/4.webp`,
+  ],
+  pool: [
+    `${privatePoolVilaFolder}/private-pool/1.webp`,
+    `${privatePoolVilaFolder}/private-pool/2.webp`,
+    `${privatePoolVilaFolder}/private-pool/3.webp`,
+    `${privatePoolVilaFolder}/private-pool/4.webp`,
+    `${privatePoolVilaFolder}/private-pool/5.webp`,
+  ],
 };
 
 export const threeBedroomVilla = {
