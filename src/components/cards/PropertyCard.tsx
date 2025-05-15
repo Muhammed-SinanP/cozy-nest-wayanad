@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 const PropertyCard = ({
   img,
@@ -21,6 +22,10 @@ const PropertyCard = ({
 
   const propertyType = slugify(title);
   const router = useRouter();
+
+  useEffect(() => {
+    router.prefetch(`/properties/${propertyType}`);
+  }, [propertyType, router]);
 
   return (
     <div
