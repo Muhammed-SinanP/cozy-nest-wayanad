@@ -6,7 +6,8 @@ const PropertyDetails = async ({
   params: Promise<{ propertyType: string }>;
 }) => {
   const { propertyType } = await params;
-  const title = decodeURIComponent(propertyType);
+  const title = propertyType.replaceAll("-"," ");
+  
 
   return <PropertyDetailsClient title={title} />;
 };

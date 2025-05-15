@@ -13,7 +13,7 @@ const TestimonialsSection = () => {
         retreat or a family getaway, Cozy Nest Wayanad has left lasting
         impressions. Watch their experiences in their own words.
       </p>
-      <TestimonialCarousel />
+      <div className="overflow-hidden sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto"><TestimonialCarousel /></div>
       <p className="testimonial-content">
         At Cozy Nest Wayanad, our guests aren&apos;t just visitors —
         they&apos;re family. Each experience shared is a story of peace,

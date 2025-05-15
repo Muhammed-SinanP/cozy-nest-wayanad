@@ -9,20 +9,20 @@ export default function TestimonialCarousel() {
   return (
     <motion.section
       className=""
-      initial={{ opacity: 0, x: 20 }}
+      initial={{ opacity: 0, x: 100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{
         delay: 0.4,
         type: "spring",
         stiffness: 50,
-        damping: 2,
+        damping: 4,
         duration: 0.6,
         ease: "easeOut",
       }}
       viewport={{ once: false, amount: 0.4 }}
     >
       <div className="overflow-hidden cursor-grab" ref={emblaRef}>
-        <div className="flex gap-1 py-6 md:py-8">
+        <div className="flex gap-2 md:gap-0 py-6 md:py-8">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}

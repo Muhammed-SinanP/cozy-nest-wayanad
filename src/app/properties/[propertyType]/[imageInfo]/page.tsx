@@ -13,19 +13,20 @@ const ImagePreview = async ({
   params: Promise<{ propertyType: string; imageInfo: string }>;
 }) => {
   const { propertyType, imageInfo } = await params;
-  const propertyTitle = decodeURIComponent(propertyType);
+  const propertyTitle = propertyType.replaceAll("-"," ");
   const [unit, index] = imageInfo.split("-");
   const imgIndex = parseInt(index);
 
+   
   let property: PropertyType = threeBedroomVilla;
 
-  if (propertyTitle === "Private Pool Villa") {
+  if (propertyTitle === "private pool villa") {
     property = privatePoolVila;
-  } else if (propertyTitle === "Three Bedroom Villa") {
+  } else if (propertyTitle === "three bedroom villa") {
     property = threeBedroomVilla;
-  } else if (propertyTitle === "Two Bedroom Villa") {
+  } else if (propertyTitle === "two bedroom villa") {
     property = twoBedroomVilla;
-  } else if (propertyTitle === "Single Bedroom Villa (4)") {
+  } else if (propertyTitle === "single bedroom villa 4") {
     property = singleBedroomVilla;
   }
   let img: string = property.room[imgIndex];

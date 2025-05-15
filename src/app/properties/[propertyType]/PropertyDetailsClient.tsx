@@ -14,13 +14,15 @@ import PropertyUnitBtn from "@/components/buttons/PropertyUnitBtn";
 
 const PropertyDetailsClient = ({ title }: { title: string }) => {
   let property: PropertyType = threeBedroomVilla;
-  if (title === "Private Pool Villa") {
+  
+  
+  if (title === "private pool villa") {
     property = privatePoolVila;
-  } else if (title === "Three Bedroom Villa") {
+  } else if (title === "three bedroom villa") {
     property = threeBedroomVilla;
-  } else if (title === "Two Bedroom Villa") {
+  } else if (title === "two Bedroom villa") {
     property = twoBedroomVilla;
-  } else if (title === "Single Bedroom Villa (4)") {
+  } else if (title === "single bedroom villa 4") {
     property = singleBedroomVilla;
   }
 
@@ -29,7 +31,7 @@ const PropertyDetailsClient = ({ title }: { title: string }) => {
     <div>
       <div className="fixed top-0 w-full shadow-sm z-20">
         <div className="bg-brand-primary flex justify-center items-center p-2 sm:p-3 text-brand-secondary">
-          <h1 className="text-2xl sm:text-3xl font-brand-title p-2 select-none">
+          <h1 className="text-2xl sm:text-3xl font-brand-title p-2 select-none capitalize">
             {title}
           </h1>
         </div>

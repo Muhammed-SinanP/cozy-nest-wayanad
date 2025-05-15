@@ -11,10 +11,20 @@ const PropertyCard = ({
   description: string;
   title: string;
 }) => {
+  const slugify = (text: string) =>
+    text
+      .toLowerCase()
+      .trim()
+      .replace(/\s+/g, "-")
+      .replace(/[^\w-]+/g, "")
+      .replace(/--+/g, "-");
+
+  const propertyType = slugify(title);
   const router = useRouter();
+
   return (
     <div
-      onClick={() => router.push(`/properties/${title}`)}
+      onClick={() => router.push(`/properties/${propertyType}`)}
       className="w-80 sm:w-80 rounded-2xl overflow-hidden shadow-md bg-white mb-8 cursor-pointer active:scale-95 transition-all transform ease-in-out"
     >
       <div className="relative h-56 md:h-48">
