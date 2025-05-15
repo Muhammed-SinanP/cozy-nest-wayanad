@@ -9,11 +9,10 @@ const Main = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setScreenHeight(window.innerHeight-78);
+      setScreenHeight(window.innerHeight - 78);
     }
   }, []);
   const screenHeightScrolled = useScrollPosition(screenHeight);
-
 
   return (
     <div>

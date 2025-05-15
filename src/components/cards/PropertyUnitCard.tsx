@@ -10,7 +10,7 @@ const PropertyUnitCard = ({
   title: string;
   images: string[];
 }) => {
-  const pathname = usePathname()
+  const pathname = usePathname();
   return (
     <div id={`${title}-section`} className="property-unit-section">
       <div className="property-unit-card">

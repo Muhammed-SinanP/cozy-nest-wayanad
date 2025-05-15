@@ -2,8 +2,8 @@ import { motion } from "motion/react";
 const BookingBtn = () => {
   return (
     <motion.a
-      initial={{ scale:0.8, }}
-      animate={{ scale:1, }}
+      initial={{ scale: 0.8 }}
+      animate={{ scale: 1 }}
       transition={{
         type: "spring",
         stiffness: 100,

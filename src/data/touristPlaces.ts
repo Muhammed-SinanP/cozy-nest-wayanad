@@ -12,7 +12,8 @@ export const touristPlaces = [
   { id: 11, place: "Chembra Peak", distance: "32.2 km" },
   { id: 12, place: "Rippon Tea Factory", distance: "32.8 km" },
   { id: 13, place: "Edakkal Caves", distance: "34.4 km" },
-  { id: 14, place: "Soochipara Waterfalls", distance: "38.2 km" },
-  { id: 15, place: "Tholpetty Wildlife Sanctuary", distance: "44.8 km" },
-  { id: 16, place: "Muthanga Wildlife Sanctuary", distance: "48.1 km" },
+  { id: 14, place: "900 kandi eco park", distance: "36.1 km" },
+  { id: 15, place: "Soochipara Waterfalls", distance: "38.2 km" },
+  { id: 16, place: "Tholpetty Wildlife Sanctuary", distance: "44.8 km" },
+  { id: 17, place: "Muthanga Wildlife Sanctuary", distance: "48.1 km" },
 ];

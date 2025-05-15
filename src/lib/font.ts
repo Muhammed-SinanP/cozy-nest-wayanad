@@ -18,5 +18,3 @@ export const brandTextFont = Playfair_Display({
   weight: ["400"],
   variable: "--font-brand-text",
 });
-
-

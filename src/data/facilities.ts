@@ -18,10 +18,10 @@ export const facilities: Facility[] = [
   },
   {
     index: 1,
-    title: "Childrewebp Park",
+    title: "Children's Park",
     img: parkImg,
     description:
-      "Our vibrant children’s park is thoughtfully designed to provide a safe, exciting, and energetic environment for kids. Equipped with fun play structures like slides and swings, it also features a dedicated cricket net where young enthusiasts can practice their batting and bowling skills. It’s the ideal spot for children to explore, play, and stay active while parents relax nearby.",
+      "Our vibrant children's park is thoughtfully designed to provide a safe, exciting, and energetic environment for kids. Equipped with fun play structures like slides and swings, it also features a dedicated cricket net where young enthusiasts can practice their batting and bowling skills. It’s the ideal spot for children to explore, play, and stay active while parents relax nearby.",
   },
   {
     index: 2,
@@ -32,7 +32,7 @@ export const facilities: Facility[] = [
   },
   {
     index: 3,
-    title: "Convention/DJ Hall",
+    title: "Convention / DJ Hall",
     img: hallImg,
     description:
       "Host your events in style at our spacious and well-equipped convention/DJ hall. Whether it's a corporate seminar, family celebration, birthday party, or a lively DJ night, the hall offers flexible seating, quality acoustics, and elegant décor to suit any occasion. With ample space and customizable arrangements, it's the perfect venue to turn your special moments into unforgettable experiences.",

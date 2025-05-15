@@ -7,9 +7,10 @@ import { FaGlassCheers } from "react-icons/fa";
 import { GiCampfire } from "react-icons/gi";
 import { FaParking } from "react-icons/fa";
 import { IoIosRestaurant } from "react-icons/io";
+
 type Amenity = {
   index: number;
-  icon: JSX.Element; 
+  icon: JSX.Element;
   title: string;
 };
 

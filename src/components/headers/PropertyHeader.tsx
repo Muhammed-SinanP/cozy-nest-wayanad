@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Logo from "../Logo";
 import BookingBtn from "../buttons/BookingBtn";
 import { IoMdArrowRoundBack } from "react-icons/io";

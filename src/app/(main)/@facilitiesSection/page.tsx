@@ -28,7 +28,7 @@ const FacilitiesSection = () => {
                 facility.index % 2
                   ? "md:items-end rounded-r-xl"
                   : "md:items-start rounded-l-xl"
-              }  bg-brand-secondary min-w-2/3 p-5`}
+              }  bg-brand-secondary min-w-2/3 p-5 shadow-sm `}
             >
               <h3 className="facility-title">{facility.title}</h3>
               <div

@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
-
 const cover1Img = "/images/cover/1.webp";
 const cover2Img = "/images/cover/2.webp";
 const cover3Img = "/images/cover/3.webp";
@@ -41,7 +40,6 @@ const HeroSection = () => {
       if (sliderIntervalRef.current) clearInterval(sliderIntervalRef.current);
     };
   }, [imgIndex]);
-   
 
   return (
     <div className="relative min-h-screen overflow-hidden">

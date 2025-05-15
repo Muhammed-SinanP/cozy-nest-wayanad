@@ -10,7 +10,7 @@ const ImagePreview = async ({
   const imageIndex = parseInt(imageInfo);
 
   const imageObj = gallery.find((image) => image.index === imageIndex);
-  console.log(imageObj);
+
   if (!imageObj) {
     return (
       <div className="min-h-screen p-4 text-center text-red-500">

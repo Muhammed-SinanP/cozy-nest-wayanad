@@ -35,7 +35,7 @@ const TouristPlacesSection = () => {
         {touristPlaces.map((place) => (
           <li
             key={place.id}
-            className="font-brand-subtitle flex justify-between items-center gap-4 text-sm md:text-base lg:text-lg text-brand-secondary tracking-wide text-shadow-sm"
+            className="font-brand-subtitle capitalize flex justify-between items-center gap-4 text-sm md:text-base text-brand-secondary tracking-wide text-shadow-sm"
           >
             {place.place}
             <span className="flex-1 border-b-2 min-w-4"></span>

@@ -14,7 +14,6 @@ const useScrollPosition = (scrollThreshold: number) => {
 
     window.addEventListener("scroll", handleScroll);
 
-    
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

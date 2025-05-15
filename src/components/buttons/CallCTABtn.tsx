@@ -9,7 +9,6 @@ const CallCTABtn = () => {
         type: "spring",
         stiffness: 100,
         damping: 8,
-        
       }}
       href="tel:+916282011125"
       className="go-to-btn bg-blue-600 text-white"

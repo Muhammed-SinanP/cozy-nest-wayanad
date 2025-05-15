@@ -60,12 +60,12 @@ html {
   font-family: var(--font-brand-title);
   color: var(--secondary-color);
 }
-.facility-title{
+.facility-title {
   @apply text-2xl sm:text-3xl border-b-2 px-4 mb-6;
   font-family: var(--font-brand-title);
   color: var(--primary-color);
 }
-.section-div{
+.section-div {
   @apply scroll-mt-16;
 }
 .section {
@@ -108,8 +108,8 @@ html {
 .property-unit-section {
   @apply p-5 scroll-mt-28;
 }
-.testimonial-content{
-  @apply  text-center text-shadow-sm text-xl px-4 tracking-wider;
+.testimonial-content {
+  @apply text-center text-shadow-sm text-xl px-4 tracking-wider;
   color: var(--secondary-color);
   font-family: var(--font-brand-title);
 }

@@ -21,12 +21,12 @@ export default function TestimonialCarousel() {
       }}
       viewport={{ once: false, amount: 0.4 }}
     >
-      <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex p-4 ">
+      <div className="overflow-hidden cursor-grab" ref={emblaRef}>
+        <div className="flex gap-1 py-6 md:py-8">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="min-w-10/12 sm:min-w-9/12 md:min-w-8/12 lg:min-w-7/12 xl:min-w-5/12 2xl:min-w-5/12 scale-95 rounded-lg overflow-hidden shadow-md shadow-teal-950"
+              className="min-w-10/12 cursor-default sm:min-w-9/12 md:min-w-8/12 lg:min-w-7/12 xl:min-w-5/12 2xl:min-w-5/12 scale-95 rounded-lg overflow-hidden shadow-md shadow-teal-950"
             >
               <video
                 src={testimonial.videoSrc}

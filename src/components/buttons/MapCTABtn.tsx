@@ -1,5 +1,5 @@
 import Image from "next/image";
-const mapIcon = "/images/icons/map.png";
+const mapIcon = "/images/icons/map.webp";
 import * as motion from "motion/react-client";
 
 const MapCTABtn = () => {

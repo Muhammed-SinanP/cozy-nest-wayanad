@@ -3,6 +3,7 @@ import Image from "next/image";
 import { MdEventAvailable } from "react-icons/md";
 const campfire = "/images/cover/campfire.webp";
 import * as motion from "motion/react-client";
+
 const AmenitiesSection = () => {
   return (
     <div className="section relative overflow-hidden">
