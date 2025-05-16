@@ -20,7 +20,7 @@ const PropertyDetailsClient = ({ title }: { title: string }) => {
     property = privatePoolVila;
   } else if (title === "three bedroom villa") {
     property = threeBedroomVilla;
-  } else if (title === "two Bedroom villa") {
+  } else if (title === "two bedroom villa") {
     property = twoBedroomVilla;
   } else if (title === "single bedroom villa 4") {
     property = singleBedroomVilla;
