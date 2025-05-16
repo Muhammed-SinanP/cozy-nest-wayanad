@@ -13,7 +13,9 @@ const Main = () => {
     }
   }, []);
   const screenHeightScrolled = useScrollPosition(screenHeight);
-
+useEffect(()=>{
+  window.scrollTo(0,0)
+},[])
   return (
     <div>
       <Header screenHeightScrolled={screenHeightScrolled} />
